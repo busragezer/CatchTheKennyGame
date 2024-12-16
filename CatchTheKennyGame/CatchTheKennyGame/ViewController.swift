@@ -9,14 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //Variables
+    // Variables
     
     var score = 0
     var timer = Timer()
     var counter = 0
     
     
-    //Views
+    // Views
     
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         
         scoreLabel.text = "\(score)"
         
-        //Images
+        // Images
         
         kenny1.isUserInteractionEnabled = true
         kenny2.isUserInteractionEnabled = true
@@ -72,7 +72,7 @@ class ViewController: UIViewController {
         
         
         
-        //Timers
+        // Timers
         
         counter = 10
         timeLabel.text = "\(counter)"
@@ -93,12 +93,12 @@ class ViewController: UIViewController {
         if counter == 0 {
             timer.invalidate()
             
-            
+            // Alert
             
             let alert = UIAlertController(title: "Time's Up", message: "Do you want to play again?", preferredStyle: UIAlertController.Style.alert)
             let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel)
             let replayButton = UIAlertAction(title: "Replay", style: UIAlertAction.Style.default) { UIAlertAction in
-                //replay function
+                // replay function
             }
             alert.addAction(okButton)
             alert.addAction(replayButton)
