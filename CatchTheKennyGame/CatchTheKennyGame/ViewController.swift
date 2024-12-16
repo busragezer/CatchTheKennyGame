@@ -93,7 +93,7 @@ class ViewController: UIViewController {
         if counter == 0 {
             timer.invalidate()
             
-            //Alert
+            
             
             let alert = UIAlertController(title: "Time's Up", message: "Do you want to play again?", preferredStyle: UIAlertController.Style.alert)
             let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel)
